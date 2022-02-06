@@ -13,7 +13,7 @@ env:
   # S3_ENDPOINT_URL: https://s3.ap-southeast-1.amazonaws.com
   # S3_REGION_NAME: ap-southeast-1
   TASK_CPU: 2048
-  TASK_MEMORY_LIMIT: 4598
+  TASK_MEMORY_LIMIT: 5120
   EC2_INSTANCE_TYPE: "t2.medium"
   MIN_CAPACITY: 1
   MAX_CAPACITY: 2
