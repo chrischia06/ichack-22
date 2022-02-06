@@ -63,18 +63,34 @@ if __name__ == '__main__':
 	st.write("""
 	# HODLcoin Demo
 
-	HODLcoin is a Proof-of-Concept for a smart contract that has the potential use cases:
-
-	1. Deterring pump-and-dump schemes; Improving transparecy
-	2. For asset managers, deterring cash outflows
-
 	## How it works / Concept:
 
 	The HODLcoin concept can be as  *time-linked* deposit. ***Time Linked Deposits*** (see [here](https://www.investopedia.com/terms/t/timedeposit.asp)) are a type of derivative that offers 
 
+	Can also be compared to [BTC Perpetual Futures](https://www.binance.com/en/support/faq/360033525031), which rewards contract holders based on a *funding rate*. However, the distinction is that 
+
+	## Applications
+
+	HODLcoin is a proof-of-concept for a smart contract that has the potential use cases:
+
+	1. Deterring pump-and-dump schemes; Improving transparecy
+
+
+	2. For asset managers, deterring cash outflows
+
+	
+
 	## Demo
 
-	You play the role of a investor in ICHackcoin
+	You play the role of a investor in *ICHackcoin*. By being a HODLer and entering the contract, you are able to see, anonymously, the number of fellow HOLDers.
+
+	## Motivation
+
+	The app was meant to be an educational tool with various fictitious (price) scenarios, partly by inspired by [this web app](https://engaging-data.com/market-timing-game/)
+
+	## Inspiration
+
+	Takes inspiration from the Crypto Rocket game and memes.
 	""")
 
 
