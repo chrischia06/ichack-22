@@ -67,9 +67,9 @@ class ICHackWebappStack(core.Stack):
         # Build Dockerfile from local folder and push to ECR
         image = ecs.ContainerImage.from_asset(".", file="Dockerfile")
 
-        secret = secretsmanager.Secret.from_secret_complete_arn(self, "Secret",
-            secret_complete_arn=SECRET_COMPLETE_ARN
-        )
+#         secret = secretsmanager.Secret.from_secret_complete_arn(self, "Secret",
+#             secret_complete_arn=SECRET_COMPLETE_ARN
+#         )
 
         # Use an ecs_patterns recipe to do all the rest!
         fargate_service = ecs_patterns.ApplicationLoadBalancedFargateService(self, "FargateService",
@@ -80,7 +80,7 @@ class ICHackWebappStack(core.Stack):
                 image=image,
                 container_port=8501,
                 environment=TASK_ENV_VARS,
-                secrets=TASK_SECRETS(secret)
+#                 secrets=TASK_SECRETS(secret)
             ),
             memory_limit_mib=TASK_MEMORY_LIMIT,
             public_load_balancer=True,
